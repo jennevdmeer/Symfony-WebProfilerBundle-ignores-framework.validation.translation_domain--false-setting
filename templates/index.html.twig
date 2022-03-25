@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ form_start(view) }}
+        {{ form_row(view.test) }}
+
+        <button>Lets go!</button>
+    {{ form_end(view) }}
+
+    {{ dump(form.data) }}
+{% endblock %}
